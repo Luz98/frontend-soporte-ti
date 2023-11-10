@@ -1,0 +1,82 @@
+
+<div class="main-container">
+  <div class="header-container">
+    <div >
+      <img class="logo" src="/assets/images/logo8.png" alt="">
+    </div>
+    <div class="top-container">
+      <ul class="horizontal-list">
+        <li>
+          <span>Bienvenido(a) </span>
+          <span>Luz Dibia Cardona</span>
+        </li>
+        <li class="user-dropdown">
+          <button>
+            <mat-icon class="menu-icon">settings_accessibility</mat-icon>
+          </button>
+          <div class="dropdown-content">
+            <button >
+              <mat-icon>group_add</mat-icon>
+              <a [routerLink]="['password']" class="style" >Cambiar clave</a>
+            </button>
+            <button >
+              <mat-icon>report</mat-icon>
+              <a [routerLink]="['closeSession']" class="style">Cerrar sesión</a>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav>
+    <div class="container-menu">
+      <button class="menu" mat-button [matMenuTriggerFor]="menu"> <mat-icon>menu</mat-icon> Menu</button>
+    <mat-menu #menu="matMenu" class="menu-options">
+      <ul>
+        <li class="style" routerLinkActive="active">
+          <button mat-menu-item>
+            <mat-icon>group_add</mat-icon>
+            <a [routerLink]="['createUser']" class="style"> Crear usuario</a>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>report</mat-icon>
+            <a [routerLink]="['createTicket']" class="style"> Crear ticket </a>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>person_search</mat-icon>
+            <a [routerLink]="['consultUser']" class="style"> Consultar usuario</a>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>search_check</mat-icon>
+            <a [routerLink]="['consultTicket']" class="style"> Consultar ticket </a>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>post_add</mat-icon>
+            <a [routerLink]="['addInventory']" class="style"> Agregar inventario </a>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>add_task</mat-icon>
+            <a [routerLink]="['addLicense']" class="style"> Agregar licencia </a>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>plagiarism</mat-icon>
+            <a [routerLink]="['consultInventory']" class="style"> Consultar inventario </a>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>policy</mat-icon>
+            <a [routerLink]="['consultLicense']" class="style"> Consultar licencias </a>
+          </button>
+        </li>
+      </ul>
+    </mat-menu>
+    </div>
+    <div class="search-container">
+      <form>
+        <input type="text" placeholder="Buscar ticket" name="search">
+        <button type="submit">
+          <mat-icon>search</mat-icon>
+        </button>
+      </form>
+    </div>
+  </nav>
+</div>

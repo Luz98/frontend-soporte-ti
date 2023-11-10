@@ -1,0 +1,62 @@
+<section class="form-main">
+    <form action="" >
+        <mat-card class="mat-card">
+            <mat-card-header class="title">Registro de licencias </mat-card-header>
+            <mat-card-content class="mat-card-content">
+               
+                <p class="input-prueba">
+                    <mat-label class="mat-name" >Nombre</mat-label>
+                    <input type="text"  placeholder="Escriba el nombre de la licencia">
+                </p>
+                <p class="input-box" >
+                    <mat-label>Version</mat-label>
+                    <input type="text"   placeholder="Escriba la version del software">
+                </p>
+                <p class="input-box">
+                    <mat-label>Tipo de licencia</mat-label>
+                    <mat-form-field appearance="outline" class="mat-form">
+                        <mat-select class="option" placeholder="Selecciona...">
+                            <mat-option value="option">Licencia de software de aplicación</mat-option>
+                            <mat-option value="option">Licencia de sistemas operativos</mat-option>
+                            <mat-option value="option">Licencia de software de desarrollo</mat-option>
+                            <mat-option value="option">Licencia de software de servidor</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    
+                </p>
+                <p class="input-box" >
+                    <mat-label>Clave del producto</mat-label>
+                    <input type="text"   placeholder="Escriba la clave del producto">
+                </p>
+                <p class="input-box">
+                    <mat-label >Cantidad adquirida</mat-label>
+                    <input type="text"  placeholder="Escriba la cantidad adquirida">
+                </p>
+                <p class="input-box">
+                    <mat-label >Cantidad en uso</mat-label>
+                    <input type="text"  placeholder="Escriba la  cantidad usada">
+                </p>
+                <p class="input-box">
+                    <mat-label >Cantidad disponible</mat-label>
+                    <input type="text"  placeholder="Escriba la cantidad disponible ">
+                </p>
+                <p class="input-box">
+                    <mat-label >Proveedor</mat-label>
+                    <input type="text"  placeholder="Escriba el nombre del Proveedor ">
+                </p>
+                <p class="input-box">
+                    <mat-label >Fecha de compra</mat-label>
+                    <input type="date" >
+                </p>
+                <p class="input-box">
+                    <mat-label >Fecha de expiración</mat-label>
+                    <input type="date">
+                </p>
+            </mat-card-content>
+            <div >
+                <button mat-flat-button class="btn">Guardar</button>
+            </div>
+      
+        </mat-card>
+    </form>
+</section>

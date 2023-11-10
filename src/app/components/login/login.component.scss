@@ -1,0 +1,93 @@
+@use '../../global-style.scss' as gs;
+
+*{
+    @include gs.global-login;
+    font-family: gs.$font-family;
+}
+.form-main{
+    @include gs.form-main;
+    background-image: url('/assets/images/fondo2.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-content{
+    @include gs.form-content;
+    border: 1px solid;
+    border-color:#999695;
+    padding: 15px;
+    box-shadow: 3px 3px 6px rgba(107, 106, 106, 0.2), 
+                -3px -3px 6px rgba(255, 255, 255, 0.7);
+    backdrop-filter: brightness(0.7);
+   
+}
+.form-content .box{
+    padding: 40px 50px;
+    background-color: transparent;
+    
+   
+}
+
+.form-content h3{
+    font-size: 35px;
+    text-align: center;
+    line-height: 1.2;
+    color: #E5E7E9 ;
+    font-weight: 700;
+}
+
+.form-content form{
+    @include gs.form;
+}
+.form-content .input-box{
+    margin: 25px;
+    color: #E5E7E9 ;
+}
+
+.form-content .input-control{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    color: #E5E7E9 ;
+    font-weight: inherit;
+    font-size: 16px;
+}
+
+.form-content .input-control:focus{
+    outline: none;
+}
+
+.form-content .input-link{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.input-control::placeholder{
+    color: #E5E7E9 ;
+}
+.gradient-text{
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    color: #A3E4D7 ;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.btn{
+  @include  gs.button;
+}
+
+.btn::before{
+    @include gs.btn-before;
+}
+
+.btn:hover::before{
+    @include gs.btn-hover-before;
+}

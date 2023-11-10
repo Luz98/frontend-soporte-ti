@@ -1,0 +1,64 @@
+<section class="form-main">
+    <form action="">
+        <mat-card class="mat-card">
+            <mat-card-header class="title">Registro de equipos </mat-card-header>
+            <mat-card-content class="mat-card-content">
+
+                <p class="input-box">
+                    <mat-label>Modelo</mat-label>
+                    <input type="text" placeholder="Escriba el modelo">
+                </p>
+                <mat-form-field appearance="outline" class="mat-form">
+                    <mat-label class="option">Estado</mat-label>
+                    <mat-select class="option" placeholder="Selecciona...">
+                        <mat-option value="option">Nuevo</mat-option>
+                        <mat-option value="option">En uso</mat-option>
+                        <mat-option value="option">En reparación</mat-option>
+                        <mat-option value="option">En desuso</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <p class="input-box">
+                    <mat-label>Ubicacion</mat-label>
+                    <input type="text" placeholder="Escriba la ubicación ">
+                </p>
+                <p class="input-box">
+                    <mat-label>Cantidad</mat-label>
+                    <input type="number" placeholder="Escriba número de equipos">
+                </p>
+                <p class="input-box">
+                    <mat-label>Marca</mat-label>
+                    <input type="text" placeholder="Escriba la marca ">
+                </p>
+                <p class="input-box">
+                    <mat-label>Serial</mat-label>
+                    <input type="text" placeholder="Escriba el serial">
+                </p>
+                <mat-form-field  class="mat-form" appearance="outline">
+                    <mat-label class="option">Tipo de equipo</mat-label>
+                    <mat-select placeholder="Selecciona..." class="option">
+                      <mat-option value="">Ordenadores portátiles</mat-option>
+                      <mat-option value="">Impresora</mat-option>
+                      <mat-option value="">Fuente de alimentación</mat-option>
+                      <mat-option value="">Disco duro</mat-option>
+                      <mat-option value="">Diadema</mat-option>
+                      <mat-option value="">Mouse</mat-option>
+                      <mat-option value="">Pantalla</mat-option>
+                      <mat-option value="">Teclado</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                <p class="input-box">
+                    <mat-label>Garantia</mat-label>
+                    <input type="text" placeholder="Escriba la garantía ">
+                </p>
+                <p class="input-box">
+                    <mat-label>Fecha de registro</mat-label>
+                    <input type="date" placeholder="Escriba la fecha">
+                </p>
+            </mat-card-content>
+            <div>
+                <button mat-flat-button class="btn">Guardar</button>
+            </div>
+
+        </mat-card>
+    </form>
+</section>

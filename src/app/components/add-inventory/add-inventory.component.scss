@@ -1,0 +1,99 @@
+@use '../../global-style.scss' as gs;
+*{
+    margin: 0;
+    padding:0; 
+    box-sizing: border-box;
+}
+
+
+.form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 0 1.5em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color:#FDFEFE;
+} 
+
+form {
+    width: 80%;
+    justify-content: center;
+    z-index: 1; 
+    background-color:#FDFEFE;
+    padding: 60px;
+    margin: 25px 0 20px;
+
+}
+
+.mat-card {
+    width: 90%; 
+    border-radius: 15px;
+    background-color:#F4F6F6  ;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #3498DB ; 
+    color: #ffffff;
+    border-radius:15px 15px 0 0;
+    font-weight: 500;
+    font-size: 27px;
+}
+
+.mat-card-content {
+   background-color:#F4F6F6  ; 
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding: 30px 15px 10px ;
+
+}
+
+.mat-card-content p{
+    margin: 0;
+    padding: 1em;
+  }
+
+  .mat-card-content .mat-form{
+    margin: 0;
+    padding: 1em;
+    color: #17202A;
+  }
+
+
+  .mat-card-content .option{
+    color:#17202A ;
+  }
+ 
+
+  .mat-card-content input{
+    margin: 15px;
+    border: none;
+    background-color: #F2F4F4;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: background-color 0.3s ease-in-out;
+
+  }
+  
+
+.mat-card button  {
+    @include gs.button($height: 45px,$width: 20%,$background-color:#3498DB  );
+    bottom: 20px;
+    justify-content: center;
+}
+ .btn::before{
+    @include gs.btn-before;
+  
+}
+
+.btn:hover::before{
+    @include gs.btn-hover-before($background-color: #5DADE2  );
+
+}

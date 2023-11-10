@@ -1,0 +1,80 @@
+$font-family:-apple-system, "Source Sans Pro", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+@mixin global-login($margin: 0, $padding:0, $box-sizing: border-box){
+    margin: $margin;
+    padding: $padding;
+    box-sizing: $box-sizing;
+}
+
+@mixin title ($width: 50%, $height: 30px, $margin: 0 0 0 65px,  $display: inline, $font-size: 30px, $text-align: left, $color:#27AE60 )
+ {
+    width: width;
+    height: $height;
+    margin: $margin;
+    display: $display;
+    font-size: $font-size;
+    text-align: $text-align;
+    color: $color;
+}
+
+@mixin button ($height: 45px,$width: 80%, $font-size: 16px, $font-weight: 500,  $margin: 15px 0 0 35px, $text-transform: capitalize, $cursor: pointer,
+            $background-color: #47c0c0,$border-radius: 20px, $user-select: none,$border: none, $overflow: hidden, $position: relative, $z-index: 1 ){
+    height: $height;
+    width: $width;
+    margin: $margin;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    text-transform: $text-transform;
+    cursor: $cursor;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    user-select: $user-select;
+    border: $border;
+    overflow: $overflow;
+    position: $position;
+    z-index: $z-index;
+}
+@mixin btn-before($content: "", $position: absolute, $left: 0, $top: 0, $height: 100%, $width: 100%, $transition: 0.5s ease,  $background-color: #3498DB, $z-index: -1  ){
+    content: $content;
+    position: $position;
+    left: $left;
+    top: $top;
+    height: $height;
+    width: $width;
+    transition: $transition;
+    background-color: $background-color;
+    z-index: $z-index;
+   
+}
+
+@mixin btn-hover-before($background-color: #21618C){
+    background-color: $background-color;
+}
+
+@mixin form-main ($min-height: 80vh, $padding: 60px 15px, $display: flex, $align-items: center, $justify-content: center, $font-family: $font-family,
+                  $font-weight: 300, $font-size: 16px, $line-height: 1.5, $overflow-x: hidden ){
+    min-height: $min-height;
+    padding: $padding;
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    font-family: $font-family;
+    font-weight:  $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    overflow-x: $overflow-x;
+}
+
+
+@mixin form-content($width: 100%, $max-width: 450px, $position: relative, $z-index: 1, $background-color: transparent, $border-radius: 20px){
+    width: $width;
+    max-width: $max-width;
+    position: $position;
+    z-index: $z-index;
+    background-color:$background-color;
+    border-radius: $border-radius;
+}
+
+@mixin form($margin: 25px 0 20px){
+        margin: 25px 0 20px;
+}
