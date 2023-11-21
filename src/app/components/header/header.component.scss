@@ -22,19 +22,15 @@
     width: 20%;
 }
 
-h1{
-    margin: 0 0 0 15px;
-    padding: 0 0 0 0;
-    font-size: 20px;
+.top-container span{
+    font-size: 17px;
+    cursor: pointer;
 }
 
-h2{
-    text-align:right;
-    margin: 0 15px;
-}
+
 
 nav{
-    background-color: #3790E9 ;
+    background-color: #1b5ca7;
     height: 70px;
     display: flex;
     align-items: center; /* Alinea los elementos internos en el centro verticalmente */
@@ -89,7 +85,15 @@ button{
     margin-right: 10px;
   }
 
+  .user-dropdown{
+    cursor: pointer;
+  }
 
+ 
+  .user-dropdown mat-icon{
+    vertical-align: middle; 
+    margin-right: 5px;  
+  }
 
   .dropdown-content {
     border-radius: 5%;
@@ -134,7 +138,7 @@ button{
   .search-container {
     display: flex; /* Esto asegura que los elementos internos se alineen horizontalmente */
     justify-content: flex-end; /* Alinea el formulario de búsqueda hacia la derecha */
-    padding-right: 450px; /* Añade un poco de espacio a la derecha */
+    padding-right: 550px; /* Añade un poco de espacio a la derecha */
     align-items: center; /* Centra los elementos en el eje vertical */
     height: 100%; /* Asegúrate de que el contenedor tenga altura para centrar los elementos internos */
     flex-grow: 1; /* Esto hará que la barra de búsqueda ocupe el espacio restante */
@@ -148,6 +152,11 @@ button{
     overflow: hidden; /* Asegura que los hijos no sobresalgan del borde redondeado */
     margin: 0px;
     align-items: center;
+
+    height: 35px;
+    width: 100%;
+    
+    
   }
   
   .search-container input {
@@ -155,11 +164,13 @@ button{
     border: none; /* Elimina el borde del input */
     padding: 10px 20px; /* Añade algo de relleno dentro del input */
     margin: 0;
-    height: 30px;
+    height: 20px;
+    width: 100%;
+   
   }
   
   .search-container button {
-    background-color: #3790E9; /* Color de fondo para el botón, usa el color principal de tu tema */
+    background-color: #084387; /* Color de fondo para el botón, usa el color principal de tu tema */
     border: none; /* Elimina el borde del botón */
     padding: 10px 20px; /* Relleno del botón */
     cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el botón */

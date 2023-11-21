@@ -2,28 +2,32 @@
 <div class="main-container">
   <div class="header-container">
     <div >
-      <img class="logo" src="/assets/images/logo8.png" alt="">
+      <img class="logo" src="/assets/images/logo.png" alt="">
     </div>
     <div class="top-container">
       <ul class="horizontal-list">
-        <li>
-          <span>Bienvenido(a) </span>
-          <span>Luz Dibia Cardona</span>
-        </li>
         <li class="user-dropdown">
           <button>
-            <mat-icon class="menu-icon">settings_accessibility</mat-icon>
+            <mat-icon>account_circle</mat-icon>
+            <span>Luz Dibia Cardona</span>
           </button>
           <div class="dropdown-content">
             <button >
-              <mat-icon>group_add</mat-icon>
+              <mat-icon>manage_accounts</mat-icon>
               <a [routerLink]="['password']" class="style" >Cambiar clave</a>
             </button>
             <button >
               <mat-icon>report</mat-icon>
-              <a [routerLink]="['closeSession']" class="style">Cerrar sesión</a>
+              <a [routerLink]="['/login']" class="style">Registrar preguntas  </a>
             </button>
           </div>
+         
+        </li>
+        <li class="user-dropdown">
+          <button>
+            <mat-icon >login</mat-icon>
+            <a [routerLink]="['/login']" class="style" >Cerrar sesión</a>
+          </button>
         </li>
       </ul>
     </div>
@@ -74,7 +78,7 @@
       <form>
         <input type="text" placeholder="Buscar ticket" name="search">
         <button type="submit">
-          <mat-icon>search</mat-icon>
+          <mat-icon (click)="searchById()">search</mat-icon>
         </button>
       </form>
     </div>

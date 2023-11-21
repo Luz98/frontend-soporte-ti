@@ -1,38 +1,43 @@
 <section class="form-main">
-    <form action="" >
+    <form action="" class="registration-form">
         <mat-card class="mat-card">
-            <mat-card-header class="title">Registro de usuarios </mat-card-header>
+            <mat-card-header class="title">Registro de usuarios</mat-card-header>
             <mat-card-content class="mat-card-content">
-               
-                <p class="input-box">
-                    <mat-label >Nombres</mat-label>
-                    <input type="text"  placeholder="Escriba el nombre">
-                </p>
-                <p class="input-box" >
+                <!-- Nombres -->
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label>Nombres</mat-label>
+                    <input matInput type="text" placeholder="Escriba el nombre">
+                </mat-form-field>
+                <!-- Apellidos -->
+                <mat-form-field appearance="outline" class="mat-form-full-width">
                     <mat-label>Apellidos</mat-label>
-                    <input type="text"   placeholder="Escriba los apellidos">
-                </p>
-                <p class="input-box" >
+                    <input matInput type="text" placeholder="Escriba los apellidos">
+                </mat-form-field>
+                <!-- Documento -->
+                <mat-form-field appearance="outline" class="mat-form-full-width">
                     <mat-label>Documento</mat-label>
-                    <input type="text"   placeholder="Escriba el numero de documento">
-                </p>
-                <p class="input-box">
-                    <mat-label >Celular</mat-label>
-                    <input type="text"  placeholder="Escriba el numero de celular">
-                </p>
-                <p class="input-box">
-                    <mat-label >Correo</mat-label>
-                    <input type="text"  placeholder="Escriba el correo">
-                </p>
-                <p class="input-box">
-                    <mat-label >Direccion</mat-label>
-                    <input type="text"  placeholder="Escriba la direccion">
-                </p>
+                    <input matInput type="text" placeholder="Escriba el numero de documento">
+                </mat-form-field>
+                <!-- Celular -->
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label>Celular</mat-label>
+                    <input matInput type="text" placeholder="Escriba el numero de celular">
+                </mat-form-field>
+                <!-- Correo -->
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label>Correo</mat-label>
+                    <input matInput type="email" placeholder="Escriba el correo">
+                </mat-form-field>
+                <!-- Direccion -->
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label>Direccion</mat-label>
+                    <input matInput type="text" placeholder="Escriba la direccion">
+                </mat-form-field>
             </mat-card-content>
-            <div >
-                <button mat-flat-button class="btn">Guardar</button>
+            <div class="button-container">
+                <button mat-raised-button color="primary" class="btn">Guardar</button>
             </div>
-      
         </mat-card>
     </form>
 </section>
+

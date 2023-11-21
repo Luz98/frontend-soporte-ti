@@ -1,121 +1,113 @@
-@use '../../global-style.scss' as gs;
-*{
-    margin: 0;
-    padding:0; 
-    box-sizing: border-box;
+.form-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding: 0 1.5em;
+  background-color: #ECF0F1;
 }
 
-
-
-
-.form-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    padding: 0 1.5em;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    background-color:#FDFEFE;
-} 
-
-form {
-    width: 80%;
-    justify-content: center;
-    z-index: 1; 
-    background-color:#FDFEFE;
-    padding: 40px;
-    margin: 15px 0 10px;
-
+.registration-form {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 70px;
+  background-color: #ECF0F1;
 }
 
 .mat-card {
-    width: 70%; 
-    border-radius: 10px;
-    background-color:#F4F6F6  ;
-    
+  border-radius: 15px;
+  background-color: #1b5ca7;
+  font-weight: 500;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #3498DB ; 
-    color: #ffffff;
-    border-radius:10px 10px 0 0;
-    font-weight: 500;
-    font-size: 27px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 15px 15px 0 0;
+  font-weight: 500;
+  font-size: 27px;
 }
 
 .mat-card-content {
-   background-color:#F4F6F6  ; 
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   padding: 30px 15px 10px ;
-
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  background-color: #1b5ca7; /* Matching the form background */
 }
 
-.input-prueba{
-  margin: 0px 0 0 0px;
-  padding-top: 1em;
+.mat-form-full-width {
+  width: 100%;
 }
 
-.mat-card-content p{
-    margin: 0;
-    padding: 1em;
+/* Styles for Angular Material form fields */
+.mat-form-field {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #FFFFFF; /* White background for input fields */
+}
+
+.mat-form-field .mat-input-element {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #000000; /* Black text for input fields */
+}
+
+/* Angular Material does not use 'input' directly, but the class is kept for consistency */
+input.mat-input-element {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none; /* Remove default border */
+  outline: none; /* Remove focus outline */
+}
+
+/* Placeholder color */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #7F8C8D;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #7F8C8D;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #7F8C8D;
+}
+
+.button-container {
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+button.btn {
+  background-color: #00ac00;
+  color: #FFFFFF; /* White text for buttons */
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.btn:hover {
+  background-color: #00FF00;
+}
+
+button.btn:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .mat-card-content {
+    grid-template-columns: 1fr;
   }
-  
-  .mat-card-content .mat-form{
-    margin: 0;
-    padding: 1em;
-    color: #17202A;
-  }
-
-
-  .mat-card-content .option{
-    color:#17202A ;
-    border: none;
-    background-color: #EAEDED  ;
-    padding: 5px 10px 0 0;
-    border-radius: 0;
-    box-shadow: none;
-    transition: background-color 0.3s ease-in-out;
-
-
-  }
- 
-.mat-form{
-  margin: 0;
-  padding-left: 0;
-}
-  .mat-card-content input{
-    margin: 15px;
-    border: none;
-    background-color: #EAEDED  ;
-    padding: 10px;
-    border-radius: 2px;
-    box-shadow: none;
-    transition: background-color 0.3s ease-in-out;
-
-  }
-  .mat-card-content .input-box{
-    margin: 0px 0 0 0px;
-    padding-top: 1em;
-}
-  
-
-.mat-card button  {
-    @include gs.button($height: 45px,$width: 20%,$background-color:#3498DB  );
-    bottom: 20px;
-    justify-content: center;
-}
- .btn::before{
-    @include gs.btn-before;
-  
-}
-
-.btn:hover::before{
-    @include gs.btn-hover-before($background-color: #5DADE2  );
-
 }

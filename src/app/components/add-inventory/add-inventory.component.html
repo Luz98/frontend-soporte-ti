@@ -1,64 +1,62 @@
 <section class="form-main">
-    <form action="">
+    <form action="" class="registration-form">
         <mat-card class="mat-card">
-            <mat-card-header class="title">Registro de equipos </mat-card-header>
+            <mat-card-header class="title">Registro de equipos</mat-card-header>
             <mat-card-content class="mat-card-content">
-
-                <p class="input-box">
-                    <mat-label>Modelo</mat-label>
-                    <input type="text" placeholder="Escriba el modelo">
-                </p>
-                <mat-form-field appearance="outline" class="mat-form">
-                    <mat-label class="option">Estado</mat-label>
-                    <mat-select class="option" placeholder="Selecciona...">
-                        <mat-option value="option">Nuevo</mat-option>
-                        <mat-option value="option">En uso</mat-option>
-                        <mat-option value="option">En reparación</mat-option>
-                        <mat-option value="option">En desuso</mat-option>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label >Modelo del equipo</mat-label>
+                    <input matInput type="text" placeholder="Escriba el modelo">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label>Estado del equipo</mat-label>
+                    <mat-select placeholder="Selecciona...">
+                        <mat-option value="nuevo">Nuevo</mat-option>
+                        <mat-option value="en_uso">En uso</mat-option>
+                        <mat-option value="en_reparacion">En reparación</mat-option>
+                        <mat-option value="en_desuso">En desuso</mat-option>
                     </mat-select>
                 </mat-form-field>
-                <p class="input-box">
-                    <mat-label>Ubicacion</mat-label>
-                    <input type="text" placeholder="Escriba la ubicación ">
-                </p>
-                <p class="input-box">
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label >Ubicación del equipo</mat-label>
+                    <input matInput type="text" placeholder="Escriba la ubicación">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
                     <mat-label>Cantidad</mat-label>
-                    <input type="number" placeholder="Escriba número de equipos">
-                </p>
-                <p class="input-box">
-                    <mat-label>Marca</mat-label>
-                    <input type="text" placeholder="Escriba la marca ">
-                </p>
-                <p class="input-box">
-                    <mat-label>Serial</mat-label>
-                    <input type="text" placeholder="Escriba el serial">
-                </p>
-                <mat-form-field  class="mat-form" appearance="outline">
-                    <mat-label class="option">Tipo de equipo</mat-label>
-                    <mat-select placeholder="Selecciona..." class="option">
-                      <mat-option value="">Ordenadores portátiles</mat-option>
-                      <mat-option value="">Impresora</mat-option>
-                      <mat-option value="">Fuente de alimentación</mat-option>
-                      <mat-option value="">Disco duro</mat-option>
-                      <mat-option value="">Diadema</mat-option>
-                      <mat-option value="">Mouse</mat-option>
-                      <mat-option value="">Pantalla</mat-option>
-                      <mat-option value="">Teclado</mat-option>
+                    <input matInput type="number" placeholder="Número de equipos">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label>Marca del equipo</mat-label>
+                    <input matInput type="text" placeholder="Escriba la marca">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label >Serial del equipo</mat-label>
+                    <input matInput type="text" placeholder="Escriba el serial" class="mat-select-value">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label >Tipo de equipo</mat-label>
+                    <mat-select placeholder="Selecciona...">
+                        <mat-option value="portatiles">Ordenadores portátiles</mat-option>
+                        <mat-option value="">Impresora</mat-option>
+                        <mat-option value="">Fuente de alimentación</mat-option>
+                        <mat-option value="">Disco duro</mat-option>
+                        <mat-option value="">Diadema</mat-option>
+                        <mat-option value="">Mouse</mat-option>
+                        <mat-option value="">Pantalla</mat-option>
+                        <mat-option value="">Teclado</mat-option>
                     </mat-select>
-                  </mat-form-field>
-                <p class="input-box">
-                    <mat-label>Garantia</mat-label>
-                    <input type="text" placeholder="Escriba la garantía ">
-                </p>
-                <p class="input-box">
-                    <mat-label>Fecha de registro</mat-label>
-                    <input type="date" placeholder="Escriba la fecha">
-                </p>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label >Garantía</mat-label>
+                    <input matInput type="text" placeholder="Escriba la garantía">
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="mat-form-full-width">
+                    <mat-label >Fecha de registro</mat-label>
+                    <input matInput type="date" class="mat-select-value">
+                </mat-form-field>
             </mat-card-content>
-            <div>
-                <button mat-flat-button class="btn">Guardar</button>
+            <div class="button-container">
+                <button mat-flat-button class="btn" type="submit">Guardar</button>
             </div>
-
         </mat-card>
     </form>
 </section>
